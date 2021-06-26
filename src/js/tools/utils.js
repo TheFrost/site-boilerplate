@@ -21,7 +21,7 @@ export const $$ = (selector) => [...document.querySelectorAll(selector)] // arra
 /**
  * Detect mobile device
  */
-export const isMobileDevice = () => new RegExp(/Mobi/i).test(window.navigator.userAgent)
+export const isMobileDevice = () => /Mobi/i.test(window.navigator.userAgent)
 
 /**
  * Detect smartphone resolutions
